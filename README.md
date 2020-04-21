@@ -13,13 +13,13 @@ Then, pull the simple scalar docker image
 ```Bash
 docker pull khaledhassan/simplescalar
 ```
-Then, execute this command to run the simple scalar docker image (Note that when you run this and the docker container starts, the prompt on the left hand side will be root@dockerID:/, you will need this dockerID in the next step)  
+Then, execute this command to run the simple scalar docker image (Note that when you run this and the docker container starts, the prompt on the left hand side will be root@containerID:/, you will need this dockerID in the next step)  
 ```Bash
 docker run -it khaledhassan/simplescalar bash
 ```
 Navigate to the cloned directory, and copy the script over to the docker image  
 ```Bash
-docker cp script.sh dockerID:/simplescalar/
+docker cp script.sh containerID:/simplescalar/
 ```
 Inside the docker container (the initial terminal)  
 ```Bash
